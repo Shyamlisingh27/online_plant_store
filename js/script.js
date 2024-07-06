@@ -48,14 +48,14 @@ document.querySelector('#close-login-btn').onclick = () => {
     closeLogin.classList.remove('active');
 
 }
-let cart = document.querySelector('.cart-items-container');
+/*let cart = document.querySelector('.cart-items-container');
 
 document.querySelector('#cart-btn').onclick = () => {
     cart.classList.toggle('active');
     navbars.classList.remove('fa-times');
     barmenu.classList.remove('active');
 
-}
+}*/
 let swiper = new Swiper(".home-slider", {
 
     autoplay: {
@@ -68,7 +68,7 @@ let swiper = new Swiper(".home-slider", {
     },
     loop: true,
 });
-let countDate = new Date('june 1, 2023 00:00:00').getTime();
+let countDate = new Date('june 20, 2025 00:00:00').getTime();
 
 function countDown() {
 

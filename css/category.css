@@ -1,0 +1,286 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/*.category {
+    margin-bottom: 40px;
+}*/
+
+.category h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    color: #4CAF50;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*images*/
+.category .plants-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.category .plants-grid .box {
+   
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.category .plants-grid .box img {
+    height: 20rem;
+    max-width: 100%;
+    border-bottom: .05rem solid rgba(0, 0, 0, .3);
+    object-fit: cover;
+}
+
+.category .plants-grid .box .discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    
+    background: rgba(0, 255, 0, 0.1);
+    color: var(--green);
+    font-size: 1.5rem;
+    padding: .5rem 1rem;
+}
+
+
+.category .plants-grid .box:hover .icons {
+    top: 0;
+}
+
+.category .plants-grid .box h3 {
+    color: #333;
+    font-size: 1.2em;
+    padding: 0.5rem 0;
+}
+
+
+.category .plants-grid .box .quantify {
+    padding: 0.5rem 0;
+}
+
+.category .plants-grid .box .quantify span {
+    font-size: 1.2rem;
+}
+
+.category .plants-grid .box .quantify input {
+    font-size: 1.2rem;
+    padding: .3rem;
+    text-align: center;
+    border: .05rem solid gray;
+    background: rgba(0, 0, 0, .1);
+}
+
+.category .plants-grid .box .price {
+    font-weight: bolder;
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+.category .plants-grid .box .price span {
+    text-decoration: line-through;
+    font-size: 1.3rem;
+    color: gray;
+}
+
+.category .plants-grid .box .btn {
+    display: block;
+    margin: 1.8rem;
+}
+
+.btnn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .9rem 3rem;
+    background: darkgreen;
+    color: #fff;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnn:hover {
+    background: green;
+}
+
+
+/*cart*/
+#cart {
+    padding: 20px;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+.cart-price span {
+    text-decoration: line-through;
+    font-size: 1em;
+    color: gray;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+
+.remove {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.remove:hover {
+    background-color: #CC4C4C;
+}
+
+.purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    border:none;
+    padding: .5rem 1rem;
+    background: rgb(14, 172, 56);
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.purchase:hover {
+    background: green;
+}
